@@ -10,18 +10,18 @@ public class CombineArrays {
     public int[] combine(int[] arr1, int[] arr2){
 
         int index = 0;
-        int[] combinedArr = new int[arr1.length + arr2.length];
+        int[] arr3 = new int[arr1.length + arr2.length];
 
         for (int element : arr1) {
-            combinedArr[index] = element;
+            arr3[index] = element;
             index++;
         }
 
         for (int element : arr2) {
-            combinedArr[index] = element;
+            arr3[index] = element;
             index++;
         }
 
-        return combinedArr;
+        return arr3;
     }
 }
